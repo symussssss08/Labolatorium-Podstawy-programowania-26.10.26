@@ -48,8 +48,8 @@ int main()
 	return 0;
 }
 
-*/
-	// Zadanie 3 
+
+			// Zadanie 3 
 
 void wyswietlwieksza(int a, int b)
 {
@@ -98,7 +98,61 @@ int main()
 }
 
 
+
 	// Zadanie 4
 
+void wyswietlnajmniejsza(int a, int b, int c)
+{
+	if (a <= b && a <= c)
+	{
+		cout << "Najmniejsza jest pirewsza liczba: " << a << endl;
+	}
+	else if (b <= a && b <= c)
+	{
+		cout << "Najmniejsza jest druga liczba: " << b << endl; 
+	}
+	else
+	{
+		cout << "Najmniejsza jest trzecia liczba: " << c << endl; 
+	}
+}
 
+int zwrocnajmniejsza(int a, int b, int c)
+{
+	int najmniejsza = a; 
+
+	if (b < najmniejsza)
+	{
+		najmniejsza = b; 
+	}
+	if (c < najmniejsza)
+	{
+		najmniejsza = c; 
+	}
+
+	return najmniejsza; 
+}
+
+int main()
+{
+	int a, b, c; 
+	cout << "Podaj pierwsza liczbe (a): ";
+	cin >> a; 
+	cout << "Podaj druga liczbe (b): ";
+	cin >> b;
+	cout << "Podaj trzecia liczbe (c): "; 
+	cin >> c; 
+	cout << endl; 
+
+
+	wyswietlnajmniejsza(a, b, c);
+
+	int wynik = zwrocnajmniejsza(a, b, c);
+	cout << "Wartosc najmniejszej liczby = " << wynik << endl; 
+
+	return 0;
+}
+*/
+	
+	// Zadanie 5	
 	
