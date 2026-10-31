@@ -6,6 +6,7 @@
 
 using namespace std;
 
+
 /*
 
 	//Zadanie 1 
@@ -46,45 +47,58 @@ int main()
 	tablicza_mnozenia();
 	return 0;
 }
-*/
 
+*/
 	// Zadanie 3 
 
-void a()
+void wyswietlwieksza(int a, int b)
 {
-	int a;
-	cout << "Podaj pierwsza liczbe: ";
-	cin >> a; 
-
+	if (a > b)
+	{
+		cout << "Pierwsza liczba jest wieksza od drugiej " << endl; 
+	}
+	else if (a < b)
+	{
+		cout << " Druga liczba jest wieksza od pierwszej." << endl; 
+	}
+	else
+	{
+		cout << " Obie liczby sa rowne." << endl; 
+	}
 }
-void b()
+
+
+int zwrocwieksza(int a, int b)
 {
-	int b;
-	cout << "Podaj druga liczbe: ";
-	cin >> b;
+	if (a < b)
+	{
+		return a;
+	}
+	else
+	{
+		return b; 
+	}
 }
 
 int main()
 {
-	a();
-	b();
-	
-	if (a > b)
-	{
-		cout << " Pierwsza liczba jest wieksza od drugie." << endl;
-	}
-	else if
-	{
-		cout " Druga liczba jest wieksza od pierwszej." << endl;
-	}
-	if (a > b)
-	{
-		cout << "Wartosc wiekszej liczby = " << a << endl;
-	}
-	else 
-	{
-		cout "Wartość wiekszej liczby = " << b << endl;
-	}
+	int a, b;
+
+	cout << " Podaj pierwsza liczbe : ";
+	cin >> a;
+	cout << " Podaj druga liczbe: ";
+	cin >> b;
+
+	wyswietlwieksza(a, b);
+
+	int wieksza = zwrocwieksza(a, b);
+	cout << " Wartosc wiekszej liczby = " << wieksza << endl;
 
 	return 0;
 }
+
+
+	// Zadanie 4
+
+
+	
