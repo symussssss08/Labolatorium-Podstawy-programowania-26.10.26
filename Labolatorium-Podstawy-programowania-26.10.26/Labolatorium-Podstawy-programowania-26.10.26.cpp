@@ -152,7 +152,91 @@ int main()
 
 	return 0;
 }
-*/
+
 	
 	// Zadanie 5	
 	
+
+double obliczPoleTrojkata(double podstawa, double wysokosc)
+{
+	double pole = 0.5 * podstawa * wysokosc; 
+	cout << "Pole trojkata wynosi: " << pole << endl; 
+	return pole; 
+}
+ 
+int main()
+{
+	double a;
+	cout << "Podstawa = ";
+	cin >> a; 
+	double postawa = a; 
+	double b; 
+	cout << "Wysokosc = ";
+	cin >> b; 
+	double wysokosc = b; 
+	double pole = obliczPoleTrojkata(postawa, wysokosc);
+	cout << "Podwojona wartosc pola wynosi: " << 2 * pole << endl; 
+	return 0; 
+}
+
+
+	// Zadanie 6 
+
+void wyswietldzielniki(int n)
+{
+	if (n <= 0)
+	{
+		cout << "liczba musi być dodatnia (n > 0)!" << endl; 
+		return; 
+
+	}
+	cout << "Dzielniki liczby n " << n << " to:"; 
+	for (int i = 1; i <= n / 2;i++)
+	{
+		if (n % i == 0)
+		{
+			cout << i << " "; 
+		}
+	}
+	cout << n << endl; 
+}
+
+int main()
+{
+	int n; 
+	cout << "Podaj liczbe calkowita dodatnia (n > 0): "; 
+	cin >> n; 
+
+	wyswietldzielniki(n); 
+	
+	return 0; 
+}
+*/
+
+	// Zadanie 7 
+
+
+float srednia_wazona(float x, float y)
+{
+	float a, b;  
+	cout << "Podaj wage dla pierwszej wartosci: "; 
+	cin >> a; 
+	cout << "Podaj wage dla drugiej wartosci: ";
+	cin >> b; 
+
+	return(x * a + y * b) / (a + b);
+}
+
+int main()
+{
+	float x, y;
+	cout << "Podaj pierwsza wartosc: ";
+	cin >> x;
+	cout << "Podaj druga wartosc: ";
+	cin >> y;
+
+	float wynik = srednia_wazona(x, y);
+	cout << "Srednia wazona wynosi = " << wynik << endl;
+
+	return 0;
+}
