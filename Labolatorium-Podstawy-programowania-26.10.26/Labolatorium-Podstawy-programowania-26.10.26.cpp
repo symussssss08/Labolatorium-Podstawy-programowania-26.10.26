@@ -444,7 +444,7 @@ int main()
 	return 0;
 }
 
-*/
+
 
 	// Zadanie 14 
 
@@ -474,3 +474,32 @@ int main()
 
 	return 0; 
 }
+
+
+
+	 // Zadanie 15 
+
+long long potega_dwojki_iteracyjnie(int n)
+{
+	long long wynik = 1; 
+	for (int i = 0; i < n; ++i)
+	{
+		wynik *= 2; 
+	}
+	return wynik; g
+}
+
+int main()
+{
+	int n; 
+	cout << "Podaj liczbe naturalna n: "; 
+	cin >> n; 
+	cout << "2^" << n << " = " << potega_dwojki_iteracyjnie(n) << endl;
+	return 0; 
+}
+
+*/
+
+	// Zadanie 16 
+
+
