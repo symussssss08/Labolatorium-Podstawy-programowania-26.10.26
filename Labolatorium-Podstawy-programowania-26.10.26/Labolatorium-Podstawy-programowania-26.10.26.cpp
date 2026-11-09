@@ -851,7 +851,8 @@ int main()
 	return 0; 
 }
 
-*/
+
+
 
 	// Zadanie 7 
 
@@ -881,3 +882,107 @@ int main()
 	return 0; 
 
 }
+
+
+
+	// Zadanie 8
+
+
+void przyprostokatne(double a, double b)
+{
+	
+	double c = sqrt(a * a + b * b); 
+	cout << "Przeciwprostokatna wynosi: " << c << endl;
+	
+}
+
+
+int main()
+{
+	double x = 8; 
+	double y = 9; 
+	przyprostokatne(x, y);
+}
+
+
+	// Zadanie 10
+	// 
+
+int argument()
+{
+	int n;
+	cout << "ile skladnikow chcesz sumowac: ";
+	cin >> n; 
+	
+	int suma = 0; 
+	int wartosc; 
+	
+	while (n != 0)
+	{
+		cout << " Podaj wartosc skladnika n: "; 
+		cin >> wartosc; 
+		suma += wartosc;
+		n--;
+	}
+
+	return suma; 
+}
+
+int main()
+{
+	cout << argument();
+	return 0;
+}
+
+
+
+
+
+	// Zadanie 11 
+
+double boki()
+{
+	double a, b; 
+	cout << "Podaj wartosc boku prostokata: ";
+	cin >> a;
+	cout << "Podaj wartosc boku prostokata: ";
+	cin >> b;
+
+	return(2 * a + 2 * b);
+}
+
+int main()
+{
+	cout << "Obwod prostokata wynosi: " << boki() << endl;
+	
+	return 0;
+}
+
+
+
+	// Zadanie 13
+
+int argumenty(int a, int b)
+{
+	
+	
+	return pow(a, b); 
+}
+
+int main()
+{
+	int a, b; 
+	cout << "Podaj pierwsza wartosc: ";
+	cin >> a;
+	cout << "Podaj druga wartosc: ";
+	cin >> b;
+	cout << "Wynik: " << argumenty(a, b) << endl;
+}
+
+*/
+
+
+
+
+
+	
